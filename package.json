@@ -1,0 +1,14 @@
+{
+   "name": "newsletter-sign-up-with-success-message-main",
+   "private": true,
+   "version": "0.0.0",
+   "scripts": {
+      "dev": "npx tailwindcss -i ./src/style.css -o ./dist/style.css --watch",
+      "build": "npx tailwindcss -i ./src/style.css -o ./dist/style.css"
+   },
+   "devDependencies": {
+      "autoprefixer": "^10.4.21",
+      "postcss": "^8.4.35",
+      "tailwindcss": "^3.4.1"
+   }
+}

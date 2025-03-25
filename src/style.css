@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+   --color-midnight: #3a3d66;
+   --color-Blue: hsl(234, 29%, 20%);
+   --color-Blues: hsl(235, 18%, 26%);
+   --color-Grey: hsl(0, 0%, 58%);
+   --color-White: hsl(0, 0%, 100%);
+   font-family: "Roboto", sans-serif;
+}
+
+@layer components {
+   .gradient-button {
+      background: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+   }
+}

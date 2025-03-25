@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./dist/style.css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+         tailwind.config = {
+            theme: {
+               extend: {
+                  colors: {
+                     midnight: "#3a3d66",
+                     Blue: "hsl(234, 29%, 20%)",
+                     Blues: "hsl(235, 18%, 26%)",
+                     Grey: "hsl(0, 0%, 58%)",
+                     White: "hsl(0, 0%, 100%)",
+                  },
+                  backgroundImage: {
+                     "gradient-button":
+                        "linear-gradient(to right, #fa709a 0%, #fee140 100%)",
+                  },
+               },
+            },
+         };
+      </script>
+      <script src="src/script.js" defer></script>
+      <title>
+         Frontend Mentor | Newsletter sign-up form with success message
+      </title>
+   </head>
+   <body class="h-screen bg-midnight flex justify-center items-center">
+      <!-- Sign-up form start -->
+      <main
+         class="bg-white h-[390px] w-[38%] flex flex-row justify-center items-center rounded-lg"
+      >
+         <div class="m-7 w-3/6">
+            <h1 class="text-4xl font-bold text-Blue mt-7 mb-5">
+               Stay updated!
+            </h1>
+            <p class="mb-5 text-xs">
+               Join 60,000+ product managers receiving monthly updates on:
+            </p>
+            <ul class="mb-5 text-xs">
+               <li class="mb-1 flex flex-row items-center">
+                  <img
+                     class="w-4 mr-3"
+                     src="assets/images/icon-success.svg"
+                     alt="success"
+                  />Product discovery and building what matters
+               </li>
+               <li class="mb-1 flex flex-row items-center">
+                  <img
+                     class="w-4 mr-3"
+                     src="assets/images/icon-success.svg"
+                     alt="success"
+                  />Measuring to ensure updates are a success
+               </li>
+               <li class="mb-1 flex flex-row items-center">
+                  <img
+                     class="w-4 mr-3"
+                     src="assets/images/icon-success.svg"
+                     alt="success"
+                  />And much more!
+               </li>
+            </ul>
+            <form class="flex flex-col items-start">
+               <label class="text-xs text-black font-bold" for="email">
+                  Email address
+               </label>
+               <input
+                  class="border size-10 w-60 p-1 mt-1 mb-3 rounded-md"
+                  type="text"
+                  placeholder="  email@company.com"
+                  name="email"
+                  id="email"
+               />
+               <button
+                  class="bg-Blue text-xs text-white w-60 h-10 rounded-md hover:bg-gradient-button transition-all duration-300"
+                  href="./src/succsess.html"
+                  type="submit"
+               >
+                  Subscribe to monthly newsletter
+               </button>
+            </form>
+         </div>
+         <div class="h-[350px] w-[90%] flex items-center justify-center">
+            <img
+               class="h-[350px] w-[100%]"
+               src="./assets/images/illustration-sign-up-desktop.svg"
+               alt=""
+            />
+         </div>
+      </main>
+
+      <!-- Sign-up form end -->
+   </body>
+</html>
