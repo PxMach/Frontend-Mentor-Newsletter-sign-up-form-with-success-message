@@ -33,10 +33,12 @@
    <body class="h-screen bg-midnight flex justify-center items-center">
       <!-- Sign-up form start -->
       <main
-         class="bg-white h-[390px] w-[38%] flex flex-row justify-center items-center rounded-lg"
+         class="bg-white h-[390px] w-[580px] flex flex-row justify-center items-center rounded-lg max-[590px]:w-[300px] max-[590px]:h-[600px] max-[590px]:flex-col-reverse"
       >
-         <div class="m-7 w-3/6">
-            <h1 class="text-4xl font-bold text-Blue mt-7 mb-5">
+         <div
+            class="m-7 w-3/6 max-[590px]:w-[250px] max-[590px]:mb-10 max-[590px]:mx-2 max-[590px]:flex max-[590px]:flex-col max-[590px]:justify-center max-[590px]:items-center"
+         >
+            <h1 class="text-4xl font-bold text-Blue mt-7 mb-5 max-[590px]:mt-4">
                Stay updated!
             </h1>
             <p class="mb-5 text-xs">
@@ -77,7 +79,7 @@
                   id="email"
                />
                <button
-                  class="bg-Blue text-xs text-white w-60 h-10 rounded-md hover:bg-gradient-button transition-all duration-300"
+                  class="bg-Blue text-xs text-white w-60 h-10 rounded-md hover:bg-gradient-button transition-all duration-300 max-[590px]:justify-center"
                   href="./src/succsess.html"
                   type="submit"
                >
@@ -85,11 +87,18 @@
                </button>
             </form>
          </div>
-         <div class="h-[350px] w-[90%] flex items-center justify-center">
+         <div
+            class="h-[350px] w-[400px] flex items-center justify-center max-[590px]:w-[300px] max-[590px]:h-[200px]"
+         >
             <img
-               class="h-[350px] w-[100%]"
+               class="h-[350px] w-[100%] max-[590px]:hidden"
                src="./assets/images/illustration-sign-up-desktop.svg"
-               alt=""
+               alt="illustration"
+            />
+            <img
+               class="hidden max-[590px]:block"
+               src="assets/images/illustration-sign-up-mobile.svg"
+               alt="illustration"
             />
          </div>
       </main>
